@@ -1,0 +1,124 @@
+html,
+body {
+  min-width: 290px;
+  color: #191919;
+  background-color: #fafafa;
+  line-height: 1.5;
+}
+
+section article {
+  font-family: "Open Sans";
+  font-size: larger;
+  text-indent: 1.5em;
+  text-align: start;
+}
+
+code {
+  font-weight: lighter;
+  font-family: inherit;
+  background-color: #e7e2e2;
+}
+
+section header  /* This cover the header elements from the id="main-doc" main element*/ {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lato";
+}
+
+nav {
+  font-family: "Lato";
+}
+
+nav header {
+  font-size: x-large;
+  text-align: center;
+  font-weight: thin;
+  font-family: "Lato";
+  background-color: #ffff7f;
+  color: black;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  color: #f3f2f2;
+  background-color: #f3f2f2;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f3f2f2;
+}
+
+#navbar li {
+  color: inherit;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li a {
+  display: block;
+  color: #191919;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f3f2f2;
+}
+
+#navbar li a.active {
+  background-color: #d8d4d4;
+}
+
+#navbar li a:hover:not(.active) {
+  background-color: #d8d4d4;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+/* The code below are for @media queries */
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: #f3f2f2;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
